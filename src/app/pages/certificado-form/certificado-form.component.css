@@ -23,3 +23,11 @@
 .atividade-group{
   margin-bottom: 32px;
 }
+
+label{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: #1A2856;
+}
