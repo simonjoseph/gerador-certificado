@@ -31,3 +31,44 @@ label{
   letter-spacing: 0;
   color: #1A2856;
 }
+
+.item-list{
+  width: 100%;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 16px;
+  gap: 12px;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-list hr{
+  all: unset;
+  margin: 12px 0;
+  display: block;
+  height: 1px;
+  background-color: #E2E8F0;
+}
+
+.remove-btn i{
+  padding: 5.75px;
+  font-size: 12.5px !important;
+  color: #E95f5f;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.remove-btn i:hover{
+  background-color: #e2e8f0;
+}
+
+.custom-input{
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  height: 40px;
+}
