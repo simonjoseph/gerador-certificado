@@ -6,17 +6,19 @@
 
   <div class="custom-card w-100">
     <h2 class="title">Novo certificado</h2>
-    <div class="mb-3">
-      <div>
-        <label for="" class="form-label">Nome completo</label>
-        <input type="text" class="form-control custom-input" name="" id="" placeholder="Digite o nome completo do aluno">
-      </div>
+    <div class="mb-3 custom-input-group">
+        <label for="nome" class="form-label">Nome completo</label>
+        <input type="text" class="form-control custom-input" name="nome" id="nome" placeholder="Digite o nome completo do aluno">
+        <div class="error-message d-flex align-items-center">
+          <i class="ph ph-warning-circle" ></i>
+          <p class="m-0">Error message</p>
+        </div>
     </div>
 
     <div class="mb-3 d-flex align-items-end">
-      <div class="flex-grow-1 me-2">
-        <label for="" class="form-label">Atividade</label>
-        <input type="text" class="form-control custom-input" name="" id="" placeholder="Digite o título da atividade">
+      <div class="flex-grow-1 me-2 custom-input-group">
+        <label for="activity" class="form-label">Atividade</label>
+        <input type="text" class="form-control custom-input" name="activity" id="activity" placeholder="Digite o título da atividade">
       </div>
       <app-secondary-button></app-secondary-button>
     </div>
