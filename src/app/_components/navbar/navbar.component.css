@@ -1,12 +1,17 @@
 .navbar{
   background-color: #fff;
   border-bottom: 1px solid #E2E8F0;
-  padding: 1rem 2rem;
+  padding-right: 28px;
+  padding-left: 12px;
 }
 
 .navbar-logo img {
   height: 40px;
   width: auto;
+}
+
+.nav-link{
+  padding: 6px !important;
 }
 
 .active{
@@ -15,4 +20,14 @@
 
 .nav-link.active{
   color: #3B5AC2;
+  font-weight: 600;
+}
+
+.nav-item{
+  cursor: pointer;
+  margin-left: 18px !important;
+}
+
+.nav-item i {
+  font-size: 20px;
 }
