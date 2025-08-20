@@ -15,13 +15,12 @@
       [textoBotaoSecundario]="'Gerar certificado'"></app-secondary-button>
   </div>
   }
-  @else {
+  @if(certificados.length > 0){
   <div class="list-certificate w-100">
-    <app-item-certificado></app-item-certificado>
-    <app-item-certificado></app-item-certificado>
-    <app-item-certificado></app-item-certificado>
-    <app-item-certificado></app-item-certificado>
-    <app-item-certificado></app-item-certificado>
+    @for(certificado of certificados; track $index) {
+    <app-item-certificado [nomeAluno]="certificado.nome" [dataEmissao]="certificado.dataEmissao"
+      [id]="certificado.id"></app-item-certificado>
+    }
   </div>
   }
 
