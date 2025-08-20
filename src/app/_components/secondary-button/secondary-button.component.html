@@ -1,1 +1,6 @@
-<button class="secondary-buton"> <i class="ph ph-plus"></i> Seconday button</button>
+<button [ngStyle]="disabled ? { 'opacity': '50%' } : {}" class="secondary-buton">
+  @if(phpClass){
+  <i class="{{phpClass}}"></i>
+  }
+  {{textoBotaoSecundario}}
+</button>
